@@ -1,0 +1,131 @@
+/* Table of Contents
+   1. Variables
+   2. Global
+   3. Typography
+   4. Layout
+   5. Components
+     5.1 Buttons  
+     5.2 Attribution
+*/
+
+/* ===========
+    Variables
+   ===========
+*/
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* ========
+    Global
+   ========
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--very-light-gray);
+  font-size: 15px;
+}
+
+/* ============
+    Typography
+   ============
+*/
+
+.cars h2 {
+  color: var(--very-light-gray);
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+
+}
+
+.cars p {
+  color: var(--transparent-white);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+/* =========
+    Layout
+   =========
+*/
+
+.cars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+}
+  
+.cars section {
+  padding: 40px;
+}
+  
+.sedans {
+  background-color: var(--bright-orange);
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+  
+.luxury {
+  background-color: var(--Very-dark-cyan);
+}
+
+/* ============
+    Components
+   ============
+*/
+
+/* Buttons */
+
+.cars button {
+  background-color: var(--very-light-gray);
+  font-family: 'Lexend Deca', sans-serif;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 20px 20px 20px 0;
+  cursor: pointer;
+}
+
+.cars button:hover {
+  border: 2px solid var(--very-light-gray);
+  background-color: transparent;
+  color: var(--very-light-gray);
+  transition: border 100ms ease-in-out, background-color 300ms ease-in-out, color 400ms ease-in-out;
+}
+
+.suvs button {
+  color: var(--dark-cyan);
+}
+
+.sedans button {
+  color: var(--bright-orange);
+}
+
+.luxury button {
+  color: var(--Very-dark-cyan);
+}
+
+/* Atribution */
+.attribution { 
+  font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
